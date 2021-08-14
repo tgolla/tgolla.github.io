@@ -4,15 +4,17 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+<style type="text/css">
+    .image-left {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      float: right;
+    }
+    </style>
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+![Image](/images/Terence Golla.jpg "Terence Golla"){: .image-left } For whatever reason you have found my blog. Most of what you will find here is technical in nature, but some of it is just for the fun of it. 
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+My experience with electronics and computers goes back many years. Let’s just say I can low level format an MFM hard drive and my memory collection contains punch cards I actually typed. Through the years I’ve have the opportunity to work for a lot of great companies like American Airlines, Microsoft, Sabre, Berendsen, Harsco, Dollar/Thrifty, Williams and Sheraton working on some very cool projects. 
 
-
-[jekyll-organization]: https://github.com/jekyll
+Today I work as a application development consultant focusing mostly on the Microsoft product line. This is my attempt to give back.  Thanks for checking it out and enjoy.
