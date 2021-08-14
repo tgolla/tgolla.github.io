@@ -3,6 +3,7 @@ layout: page
 title: .NET
 ---
 
+All things related to development in the .NET Framework.
 
 {% assign posts = site.posts | where_exp: "post", "post.categories contains '.NET'" %}
 {% for post in posts %}
