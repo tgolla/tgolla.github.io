@@ -1,12 +1,12 @@
 ---
-layout: post
+layout: posts
 title:  "Adding Versioning Information to Your Website using AssemblyInfo"
 date:   2015-8-31 12:49:00 -0600
 category: .NET
 tags: ASP.NET AssemblyInfo .NET
 ---
 
-![Image](/images/Version 2.0.1.5.png "Version 2.0.1.5")
+![Image](/assets/images/Version 2.0.1.5.png "Version 2.0.1.5")
 
 When it comes to versioning the .NET framework has everything a developer needs to define information about an applications assembly like name, description and version.  Templates used by Visual Studio to create projects automatically generates an AssemblyInfo file under the Properties folder for the developer to fill in values for assembly attributes such as AssemblyTitle, AssemblyCopyright and AssemblyVersion.  That is until you build a website application.  For whatever reason the Visual Studio templates for building a website application don’t generate an AssemblyInfo file.
 

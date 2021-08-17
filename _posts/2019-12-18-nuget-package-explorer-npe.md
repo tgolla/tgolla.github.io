@@ -6,7 +6,7 @@ category: Developer Tools
 tags: NuGet
 ---
 
-![Image](/images/NuGet Package Explorer Logo.png "NuGet Package Explorer Logo")
+![Image](/assets/images/NuGet Package Explorer Logo.png "NuGet Package Explorer Logo")
 
 NuGet Package Explorer (NPE) is an application that makes it easy to create and explore NuGet packages. You can load a .nupkg or .snupkg file from disk or directly from a feed such as [nuget.org](http://nuget.org "NuGet"){:target="_blank"}.  Even with the added functionality in Visual Studio to generate NuGet packaged in a build the tool is extremely useful if you are working with NuGet packages.
 

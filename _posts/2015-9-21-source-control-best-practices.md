@@ -7,7 +7,7 @@ tag: Source Control
 tags: NET TFS
 ---
 
-![Image](/images/Source Control Best Practices-Zip File Icon.gif "ZIP File Source Control")
+![Image](/assets/images/Source Control Best Practices-Zip File Icon.gif "ZIP File Source Control")
 
 ## Why Source Control
 
@@ -39,7 +39,7 @@ The first thing I do on a TFS system is turn on the requirement for the comment 
 
 Making meaningful comments requires a lot of practice and discipline.  If you want to get good at it review you check-in history every week.  Look at the comments together.  Do they tell a story of what was developed that week? 
 
-![Image](/images/Source Control Best Practices-VS 2012 TFS Source Control History.png)
+![Image](/assets/assets/images/Source Control Best Practices-VS 2012 TFS Source Control History.png)
 
 Look at the files checked-in in each change set.  Are each of those files pertinent to the comment and feature set?
 
@@ -47,7 +47,7 @@ Look at the files checked-in in each change set.  Are each of those files pertin
 
 Finally, look at the files.  Does the annotation help you understand the code?
 
-![Image](/images/Source Control Best Practices-VS 2012 Annotated File.png)
+![Image](/assets/images/Source Control Best Practices-VS 2012 Annotated File.png)
 
 There’s an adage running around the internet that read “Write every commit message like the next person who reads it is an axe-wielding maniac who knows where you live”.  What it means is that if I am the axe-wielding maniac insanely trying to track down a bug in your code with comments like “My boss just made me check in today’s work”.  Well, I’m coming after you!
 

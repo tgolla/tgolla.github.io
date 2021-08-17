@@ -11,4 +11,4 @@ A picture is worth a thousand words. So when it comes to showing your users what
 
 The truly professional end result can be presented directly through the application or you can easily copy and paste them into your Word or PowerPoint presentation. No more photographing the meeting whiteboard or scanning your pencil drawing. There are even online video tutorials so there is no excuse not to give it a try.
 
-![Image](/images/iphone-sketch.png "Balsamiq Mockups - IPhone Sketch")
+![Image](/assets/images/iphone-sketch.png "Balsamiq Mockups - IPhone Sketch")
