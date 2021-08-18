@@ -26,6 +26,10 @@ email: tgolla@example.com
 description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tgolla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+breadcrumbs: true  # disabled by default
+tag_archive:
+  type: liquid
+  path: /tags/
 twitter_username: tfgolla
 github_username:  tgolla
 timezone: America/Chicago
