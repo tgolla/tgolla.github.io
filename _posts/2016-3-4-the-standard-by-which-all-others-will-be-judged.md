@@ -5,9 +5,7 @@ date:   2016-3-4 3:40:00 -0600
 category: Pop
 ---
 
-[![Image](/assets/images/fitzs-black-cherry.jpg "Fitz's")](https://fitzsrootbeer.com/){:target="_blank"}
-
-Meet the standard…Fitz’s Black Chery ([Fitz's](https://fitzsrootbeer.com/ "Fitz's"){:target="_blank"}).  So why is this the standard all others must meet.  Well besides the simple fact that it taste great let’s look at the ingredients it has and doesn’t have.  This is what you will find on the side of the label.
+[![Image](/assets/images/posts/fitzs-black-cherry.jpg "Fitz's")](https://fitzsrootbeer.com/){:target="_blank"}{: .align-right}Meet the standard…Fitz’s Black Chery ([Fitz's](https://fitzsrootbeer.com/ "Fitz's"){:target="_blank"}).  So why is this the standard all others must meet.  Well besides the simple fact that it taste great let’s look at the ingredients it has and doesn’t have.  This is what you will find on the side of the label.
 
 Original Recipe: Filtered carbonated water, all natural pure cane sugar, citric acid, purple sweet potato juice (color), caramel color and natural flavors.
 

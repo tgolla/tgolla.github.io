@@ -1,7 +1,7 @@
 ---
-layout: single
+layout: home
 title: Test
 permalink: /test/
+header:
+  image: /assets/images/headers/EggBot1280x426.jpg
 ---
-
-{% include posts-category.html taxonomy="Developer Tools" %}

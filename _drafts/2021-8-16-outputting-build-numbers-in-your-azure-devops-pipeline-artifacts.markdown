@@ -9,5 +9,5 @@ tag: Azure Pipeline
 tags: Azure Pipeline CI
 ---
 
-![Image](/images/ "")
+![Image](/images/posts/ "")
 

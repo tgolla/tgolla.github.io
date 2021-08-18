@@ -11,7 +11,7 @@ excerpt: If you want any number of reasons for using source control just Google 
 
 If you want any number of reasons for using source control just Google it.  This article is really just a regurgitation of so many others thoughts on the subject.  But the truth is that through the years there have been very few clients for which I have worked, whether they have a team of one or 20 developers, that really understood the value of source control.  For them I’ve written variations of what you about are to read.
 
-![Image](/assets/images/Source Control Best Practices-Zip File Icon.gif "ZIP File Source Control"){: .align-right} To this day I still meet the “developer” who lives and dies by the ‘ZIP’ file source control system.  Really!  Zip file are not source control.  They are archives for historians to open up years from now to ponder what your code really did and how it came to exist.  Instead, a source control system is a living, breathing entity that can tell you how your code got to where it is today. 
+![Image](/assets/images/posts/Source Control Best Practices-Zip File Icon.gif "ZIP File Source Control"){: .align-right} To this day I still meet the “developer” who lives and dies by the ‘ZIP’ file source control system.  Really!  Zip file are not source control.  They are archives for historians to open up years from now to ponder what your code really did and how it came to exist.  Instead, a source control system is a living, breathing entity that can tell you how your code got to where it is today. 
 
 Now I’m not about to tell you what source control system to use.  The few examples in this article are using TFS 2012, after all I am something of a Microsoft bigot (it pays the bills).  TFS is really more than just a source control system and with 2012 Microsoft has even opened its mind to other possibilities for source control such as Git.
 
@@ -37,15 +37,15 @@ The first thing I do on a TFS system is turn on the requirement for the comment 
 
 Making meaningful comments requires a lot of practice and discipline.  If you want to get good at it review you check-in history every week.  Look at the comments together.  Do they tell a story of what was developed that week? 
 
-![Image](/assets/assets/images/Source Control Best Practices-VS 2012 TFS Source Control History.png)
+![Image](/assets/assets/images/posts/Source Control Best Practices-VS 2012 TFS Source Control History.png)
 
 Look at the files checked-in in each change set.  Are each of those files pertinent to the comment and feature set?
 
-![Image](/images/Source Control Best Practices-VS 2012 Team Explorer-Changeset Details.png)
+![Image](/images/posts/Source Control Best Practices-VS 2012 Team Explorer-Changeset Details.png)
 
 Finally, look at the files.  Does the annotation help you understand the code?
 
-![Image](/assets/images/Source Control Best Practices-VS 2012 Annotated File.png)
+![Image](/assets/images/posts/Source Control Best Practices-VS 2012 Annotated File.png)
 
 There’s an adage running around the internet that read “Write every commit message like the next person who reads it is an axe-wielding maniac who knows where you live”.  What it means is that if I am the axe-wielding maniac insanely trying to track down a bug in your code with comments like “My boss just made me check in today’s work”.  Well, I’m coming after you!
 

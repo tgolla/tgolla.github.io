@@ -28,8 +28,6 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tgolla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tfgolla
 github_username:  tgolla
-logo: "/assets/images/88x88.png"
-masthead_title: "Terence Golla"
 timezone: America/Chicago
 
 # Build settings
