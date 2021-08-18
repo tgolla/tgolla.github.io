@@ -18,6 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+permalink: /:categories/:title/
 title: Terence Golla
 subtitle: "Version 2.0"
 name: Terence Golla
@@ -27,6 +28,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tgolla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: tfgolla
 github_username:  tgolla
+logo: "/assets/images/88x88.png"
+masthead_title: "Terence Golla"
+timezone: America/Chicago
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -35,6 +39,10 @@ locale: "en-US"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-remote-theme
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -56,6 +64,8 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+include: [ _pages ]
+
 defaults:
   # _posts
   - scope:
@@ -64,6 +74,24 @@ defaults:
     values:
       layout: single
       read_time: true
-      comments: true
+      comments: false
       share: true
       related: true
+      show_date: true
+
+author:
+  name: "Your Name"
+  avatar: "/assets/images/bio-photo.jpg"
+  bio: "I am an **amazing** person." # Note: Markdown is allowed
+  location: "Somewhere"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tgolla"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tgolla"
+     
