@@ -1,0 +1,11 @@
+main:
+  - title: ".Net"
+    url: /.net/
+  - title: "Developer Tools"
+    url: /developer%20tools/
+  - title: "Books"
+    url: /Books/
+  - title: "Pop"
+    url: /pop/
+  - title: "About"
+    url: /about/

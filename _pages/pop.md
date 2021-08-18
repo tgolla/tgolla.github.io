@@ -1,6 +1,7 @@
 ---
 layout: single
 title: Pop
+permalink: /pop/
 ---
 
 So here is one of those fun things.  When I was a kid growing up in Pennsylvania my Grandfather owned a beer and soda pop distributorship in Kittanning, PA.  In the basement of his house along with the old coal shoot he had a walk in refrigerator/freezer where his grandkids could always find a case or two of orange and cherry pop. 
