@@ -4,16 +4,14 @@ title:  "Source Control Best Practices"
 date:   2015-9-21 13:01:00 -0600
 category: .NET
 tag: Source Control
-tags: NET TFS
+tags: .NET TFS
+excerpt: If you want any number of reasons for using source control just Google it.  This article is really just a regurgitation of so many others thoughts on the subject.  But the truth is that through the years there have been very few clients for which I have worked, whether they have a team of one or 20 developers, that really understood the value of source control.  For them I’ve written variations of what you about are to read.
 ---
-
-![Image](/assets/images/Source Control Best Practices-Zip File Icon.gif "ZIP File Source Control")
-
 ## Why Source Control
 
-Let face it.  If you want any number of reasons for using source control just Google it.  This article is really just a regurgitation of so many others thoughts on the subject.  But the truth is that through the years there have been very few clients for which I have worked, whether they have a team of one or 20 developers, that really understood the value of source control.  For them I’ve written variations of what you about are to read.
+If you want any number of reasons for using source control just Google it.  This article is really just a regurgitation of so many others thoughts on the subject.  But the truth is that through the years there have been very few clients for which I have worked, whether they have a team of one or 20 developers, that really understood the value of source control.  For them I’ve written variations of what you about are to read.
 
-To this day I still meet the “developer” who lives and dies by the ‘ZIP’ file source control system.  Really!  Zip file are not source control.  They are archives for historians to open up years from now to ponder what your code really did and how it came to exist.  Instead, a source control system is a living, breathing entity that can tell you how your code got to where it is today. 
+![Image](/assets/images/Source Control Best Practices-Zip File Icon.gif "ZIP File Source Control"){: .align-right} To this day I still meet the “developer” who lives and dies by the ‘ZIP’ file source control system.  Really!  Zip file are not source control.  They are archives for historians to open up years from now to ponder what your code really did and how it came to exist.  Instead, a source control system is a living, breathing entity that can tell you how your code got to where it is today. 
 
 Now I’m not about to tell you what source control system to use.  The few examples in this article are using TFS 2012, after all I am something of a Microsoft bigot (it pays the bills).  TFS is really more than just a source control system and with 2012 Microsoft has even opened its mind to other possibilities for source control such as Git.
 
