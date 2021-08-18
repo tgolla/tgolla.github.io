@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Entity Framework Core in Action"
 date:   2019-9-29 11:43:00 -0600
 category: Books

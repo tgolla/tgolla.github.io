@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Website Versioning Revisited"
 date:   2016-1-29 12:55:00 -0600
 category: .NET

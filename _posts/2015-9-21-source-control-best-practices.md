@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Source Control Best Practices"
 date:   2015-9-21 13:01:00 -0600
 category: .NET

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change"
 date:   2019-9-30 9:53:00 -0600
 category: Books

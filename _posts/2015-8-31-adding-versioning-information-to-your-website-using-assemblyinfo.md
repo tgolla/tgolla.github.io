@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: single
 title:  "Adding Versioning Information to Your Website using AssemblyInfo"
 date:   2015-8-31 12:49:00 -0600
 category: .NET

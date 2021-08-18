@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Balsamiq Mockups - A Picture is Worth a Thousand Words"
 date:   2016-4-8 12:37:00 -0600
 category: Developer Tools

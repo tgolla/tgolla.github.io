@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Working with JSON"
 date:   2016-3-21 12:04:00 -0600
 category: Developer Tools

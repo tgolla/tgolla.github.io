@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "The Standard by Which All Others Will Be Judged"
 date:   2016-3-4 3:40:00 -0600
 category: Pop

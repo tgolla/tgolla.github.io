@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "Unit Testing ASP.NET Core Identity"
 date: 2019-5-18 2:58:00 -0600
 category: .NET

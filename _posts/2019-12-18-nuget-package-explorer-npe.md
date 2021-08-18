@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title:  "NuGet Package Explorer (NPE)"
 date:   2019-12-18 14:57:00 -0600
 category: Developer Tools
