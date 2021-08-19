@@ -23,7 +23,7 @@ title: Terence Golla
 subtitle: "Version 2.0"
 name: Terence Golla
 email: tgolla@example.com
-description: 
+description: Golla Labs where the strange and unusual is an everyday occurance.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://tgolla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 breadcrumbs: true  # disabled by default
@@ -33,6 +33,7 @@ tag_archive:
 twitter_username: tfgolla
 github_username:  tgolla
 timezone: America/Chicago
+author_profile : true
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
@@ -82,10 +83,10 @@ defaults:
       show_date: true
 
 author:
-  name: "Your Name"
+  name: "Terence Golla"
   avatar: "/assets/images/bio-photo.jpg"
-  bio: "I am an **amazing** person." # Note: Markdown is allowed
-  location: "Somewhere"
+  bio: "An application developer attempting to give back." # Note: Markdown is allowed
+  location: "Tulsa, OK"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
