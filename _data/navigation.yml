@@ -1,8 +1,8 @@
 main:
-  - title: ".Net"
+  - title: ".NET"
     url: /.net/
   - title: "Developer Tools"
-    url: /developer%20tools/
+    url: /developer-tools/
   - title: "Books"
     url: /books/
   - title: "Pop"

@@ -2,7 +2,7 @@
 layout: single
 title:  "Working with JSON"
 date:   2016-3-21 12:04:00 -0600
-category: Developer Tools
+category: Developer-Tools
 tag: JSON C# Class Generator
 tags: JSON Json.NET json2csharp Serialization Serializing Deserializing
 ---
