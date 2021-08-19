@@ -3,8 +3,7 @@ layout: single
 title:  "Source Control Best Practices"
 date:   2015-9-21 13:01:00 -0600
 category: .NET
-tag: Source Control
-tags: .NET TFS
+tags: Source-Control .NET TFS
 excerpt: If you want any number of reasons for using source control just Google it.  This article is really just a regurgitation of so many others thoughts on the subject.  But the truth is that through the years there have been very few clients for which I have worked, whether they have a team of one or 20 developers, that really understood the value of source control.  For them I’ve written variations of what you about are to read.
 ---
 ## Why Source Control

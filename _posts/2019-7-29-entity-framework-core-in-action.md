@@ -3,11 +3,7 @@ layout: single
 title:  "Entity Framework Core in Action"
 date:   2019-9-29 11:43:00 -0600
 category: Books
-tag: EF Core
-tag: Entity Framework Core
-tag: EF
-tag: Entity Framework
-tag: .NET Core
+tags: EF-Core Entity-Framework-Core EF Entity-Framework .NET-Core
 excerpt: Overall “Entity Framework Core in Action” was a good read with a lot of useful information.  If you have been using Entity Framework prior to .NET Core the author makes a point to outline the differences.  He also focuses on Domain-Driven Design (DDD) as it relates to EF Core presenting a rather complex solution for a data, business and service layer model.  If your interested in more about DDD with EF Core I would also point you to Julie Lerman’s blog.  For lack of a more definitive book on the market this will get up to speed on the changes in EF Core, provide you with some useful code solutions and make you think more about DDD.
 ---
 
