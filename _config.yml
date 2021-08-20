@@ -35,6 +35,12 @@ twitter_username: tfgolla
 github_username:  tgolla
 timezone: America/Chicago
 author_profile : true
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "UA-47017136-1"
+    anonymize_ip: false # default
+
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
