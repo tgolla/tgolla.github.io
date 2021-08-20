@@ -22,6 +22,7 @@ permalink: /:categories/:title/
 title: Terence Golla
 subtitle: "Version 2.0"
 name: Terence Golla
+author: Terence Golla
 email: tgolla@example.com
 description: Golla Labs where the strange and unusual is an everyday occurance.
 baseurl: "" # the subpath of your site, e.g. /blog

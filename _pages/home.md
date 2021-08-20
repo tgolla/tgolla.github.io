@@ -4,4 +4,6 @@
 
 layout: home
 permalink: /
+header:
+  image: /assets/images/headers/20160714_165430-1280x320.jpg
 ---

@@ -2,6 +2,8 @@
 layout: single
 title: About
 permalink: /about/
+header:
+  image: /assets/images/headers/20181208_153231-1280x320.jpg
 ---
 
 ![Image](/assets/images/Terence Golla.jpg "Terence Golla"){: .align-right} For whatever reason you have found my blog. Most of what you will find here is technical in nature, but some of it is just for the fun of it. 
