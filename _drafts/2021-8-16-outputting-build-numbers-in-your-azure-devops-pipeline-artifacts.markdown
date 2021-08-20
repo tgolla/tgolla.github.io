@@ -7,6 +7,8 @@ tag: Azure DevOps
 tag: Azure DevOps Pipeline
 tag: Azure Pipeline
 tags: Azure Pipeline CI
+header:
+  image: /assets/images/headers/20150403_150507-1280x320.jpg
 ---
 
 ![Image](/images/posts/ "")

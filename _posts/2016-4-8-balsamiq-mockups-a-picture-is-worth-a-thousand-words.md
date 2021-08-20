@@ -4,6 +4,8 @@ title:  "Balsamiq Mockups - A Picture is Worth a Thousand Words"
 date:   2016-4-8 12:37:00 -0600
 category: Developer-Tools
 tags: Balsamiq-Mockups Mockup Wireframing Sketching
+header:
+  image: /assets/images/headers/20160101_183642-1280x320.jpg
 ---
 
 A picture is worth a thousand words. So when it comes to showing your users what the application is going to look like Balsamiq Mockups [https://balsamiq.com/](https://balsamiq.com/ "Balsamiq Mockups"){:target="_blank"} is hard to beat. I love the desktop app. It’s easy to learn and use, you can easily add your own sketches and it beats using a white board. The results are somewhere between that pencil sketch you did on a napkin and hiring a professional graphics artist.

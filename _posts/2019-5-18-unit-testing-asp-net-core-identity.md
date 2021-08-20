@@ -4,6 +4,8 @@ title:  "Unit Testing ASP.NET Core Identity"
 date: 2019-5-18 2:58:00 -0600
 category: .NET
 tags: Unit-Testing ASP.NET-Core-Identity ASP.NET-Core SQLite-In\-Memory CreateWebHostBuilder ServiceCollection UserManager RoleManager IdentityUser IdentityRole
+header:
+  image: /assets/images/headers/20170821_131105-1280x320.jpg
 ---
 
 I had the opportunity to work on an authentication/account management Web API in which we use the new ASP.NET Core Identity.  ASP.NET Core Identity is easy to work with and customize.  Our challenge came when we began to look at how we would write unit test for our custom classes that inherited from ASP.NET Core Identity classed like UserManager, extension classes built on ASP.NET Core Identity classes and the controllers that used ASP.NET Core Identity classes.

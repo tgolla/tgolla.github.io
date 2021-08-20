@@ -4,7 +4,9 @@ title:  "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Chan
 date:   2019-9-30 9:53:00 -0600
 category: Books
 tags: 1-on-1 Management Manager
-excerpt: The Manager Path is written as a guide for those in the IT industry by author Camille Fournier a former developer turned CTO, that takes the reader through the different stage from being a singular contributor to managing a companies IT department and everything in between. The book does an excellent job of describing each stage of one’s career who sees management in their future. 
+excerpt: The Manager Path is written as a guide for those in the IT industry by author Camille Fournier a former developer turned CTO, that takes the reader through the different stage from being a singular contributor to managing a companies IT department and everything in between. The book does an excellent job of describing each stage of one’s career who sees management in their future.
+header:
+  image: /assets/images/headers/
 ---
 
 ![Image](/assets/images/posts/The Manager's Path - A Guide for Tech Leaders Navigating Growth and Change.jpg "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change")

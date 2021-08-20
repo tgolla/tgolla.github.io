@@ -4,6 +4,8 @@ title:  "Website Versioning Revisited"
 date:   2016-1-29 12:55:00 -0600
 category: .NET
 tags: ASP.NET AssemblyInfo .NET
+header:
+  image: /assets/images/headers/20180813_091343-1280-320.jpg
 ---
 
 ![Image](/assets/images/posts/Website Versioning Revisited-Version 2.0.1.6.png "Version 2.0.1.6"){: .align-left} A while back I took a look at versioning web applications using an AssemblyInfo file (see [‘Adding Versioning Information to Your Website using AssemblyInfo’](/.net/adding-versioning-information-to-your-website-using-assemblyinfo "Adding Versioning Information to Your Website using AssemblyInfo")).  The article was short sited in one aspect…code reuse.  Because of the amount of research I had done at the time I wrote the article, I was more obsessed with the actual technical means of getting to the information in the AssemblyInfo file and not the bigger picture where no programmer wants to have to remember the long complex code line needed to get say the version number.

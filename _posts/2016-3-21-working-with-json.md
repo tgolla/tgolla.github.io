@@ -4,6 +4,8 @@ title:  "Working with JSON"
 date:   2016-3-21 12:04:00 -0600
 category: Developer-Tools
 tags: JSON-C#-Class-Generator JSON Json.NET json2csharp Serialization Serializing Deserializing
+header:
+  image: /assets/images/headers/20170316_142652-1280x320.jpg
 ---
 
 If you're doing anything web services that return JSON here are some useful tools.

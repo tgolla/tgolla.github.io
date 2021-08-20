@@ -4,6 +4,8 @@ title:  "Adding Versioning Information to Your Website using AssemblyInfo"
 date:   2015-8-31 12:49:00 -0600
 category: .NET
 tags: ASP.NET AssemblyInfo .NET
+header:
+  image: /assets/images/headers/20180813_092458-1280x320.jpg
 ---
 
 ![Image](/assets/images/posts/Version 2.0.1.5.png "Version 2.0.1.5"){: .align-left} Update: Check out ['Website Versioning Revisited'](/.net/website-versioning-revisited) 

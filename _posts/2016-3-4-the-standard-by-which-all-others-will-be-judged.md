@@ -3,6 +3,8 @@ layout: single
 title:  "The Standard by Which All Others Will Be Judged"
 date:   2016-3-4 3:40:00 -0600
 category: Pop
+header:
+  image: /assets/images/headers/20160714_175513-1280x320.jpg
 ---
 
 [![Image](/assets/images/posts/fitzs-black-cherry.jpg "Fitz's")](https://fitzsrootbeer.com/){:target="_blank"}{: .align-right}Meet the standard…Fitz’s Black Chery ([Fitz's](https://fitzsrootbeer.com/ "Fitz's"){:target="_blank"}).  So why is this the standard all others must meet.  Well besides the simple fact that it taste great let’s look at the ingredients it has and doesn’t have.  This is what you will find on the side of the label.
