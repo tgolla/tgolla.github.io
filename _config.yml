@@ -35,6 +35,7 @@ twitter_username: tfgolla
 github_username:  tgolla
 timezone: America/Chicago
 author_profile : true
+search: true
 analytics:
   provider: "google-gtag"
   google:
