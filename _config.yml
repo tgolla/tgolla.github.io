@@ -26,7 +26,7 @@ author: Terence Golla
 email: tgolla@example.com
 description: Golla Labs where the strange and unusual is an everyday occurance.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://tgolla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://terencegolla" # the base hostname & protocol for your site, e.g. http://example.com
 breadcrumbs: true  # disabled by default
 tag_archive:
   type: liquid
