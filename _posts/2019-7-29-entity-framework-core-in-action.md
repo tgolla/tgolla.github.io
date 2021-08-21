@@ -9,7 +9,7 @@ header:
   image: /assets/images/headers/
 ---
 
-![Image](/assets/images/posts/Entity Framework Core in Action.jpg "Entity Framework Core in Action")
+![Image](/assets/images/posts/Entity-Framework-Core-in-Action.jpg "Entity Framework Core in Action")
 
 by Jon P Smith<br />Manning Publications<br />[https://www.manning.com/books/entity-framework-core-in-action](https://www.manning.com/books/entity-framework-core-in-action "Entity Framework Core in Action"){:target="_blank"}
 

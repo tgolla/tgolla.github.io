@@ -8,7 +8,7 @@ header:
   image: /assets/images/headers/20180813_092458-1280x320.jpg
 ---
 
-![Image](/assets/images/posts/Version 2.0.1.5.png "Version 2.0.1.5"){: .align-left} Update: Check out ['Website Versioning Revisited'](/.net/website-versioning-revisited) 
+![Image](/assets/images/posts/Version-2.0.1.5.png "Version 2.0.1.5"){: .align-left} Update: Check out ['Website Versioning Revisited'](/.net/website-versioning-revisited) 
 
 When it comes to versioning the .NET framework has everything a developer needs to define information about an applications assembly like name, description and version.  Templates used by Visual Studio to create projects automatically generates an AssemblyInfo file under the Properties folder for the developer to fill in values for assembly attributes such as AssemblyTitle, AssemblyCopyright and AssemblyVersion.  That is until you build a website application.  For whatever reason the Visual Studio templates for building a website application don’t generate an AssemblyInfo file.
 
@@ -16,7 +16,7 @@ If you search the internet you will find all kinds of suggestions for versioning
  
 The first thing you need to do is create an AssemblyInfo.cs (or .vb) file in the App_Code folder.  Once created you can replaces the generated class code with the contents of and existing projects AssemblyInfo file and modify the information for each of the assembly attributes.
 
-{% highlight csharp %}
+```csharp
 using System.Reflection;
 using System.Runtime.InteropServices;
 
@@ -52,18 +52,18 @@ using System.Runtime.InteropServices;
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")] 
-{% endhighlight %}
+```
 
 Next you need to access this information. This becomes a bit tricky as ASP.NET runs web code inside an existing application assembly. So in say a Windows application you would use the following code to get the version information.
 
-{% highlight csharp %}
+```csharp
 using System.Reflection;
 Version version = Assembly.GetEntryAssembly().GetName().Version;
-{% endhighlight %}
+```
 
 But using this code in an ASP.NET application would actually pull the version information from the ASP.NET assembly spun up by IIS in the application pool and return version 0.0.0.0.  The trick is to go after the correct assembly through the current HttpContext.  By using the current HttpContext you can access the websites assembly information in any page, user control, internal class (\App_Code) and external compiled class.  The following is a code example you can paste in to a web page to display the information provided in the AssemblyInfo file.
 
-{% highlight csharp %}
+```csharp
 AssemblyTitle: <%= ((System.Reflection.AssemblyTitleAttribute)Attribute.GetCustomAttribute(HttpContext.Current.ApplicationInstance.GetType().BaseType.Assembly, typeof(System.Reflection.AssemblyTitleAttribute), false)).Title %><br />
 AssemblyDescription:<%= ((System.Reflection.AssemblyDescriptionAttribute)Attribute.GetCustomAttribute(HttpContext.Current.ApplicationInstance.GetType().BaseType.Assembly, typeof(System.Reflection.AssemblyDescriptionAttribute), false)).Description %><br />
 AssemblyConfiguration:<%= ((System.Reflection.AssemblyConfigurationAttribute)Attribute.GetCustomAttribute(HttpContext.Current.ApplicationInstance.GetType().BaseType.Assembly, typeof(System.Reflection.AssemblyConfigurationAttribute), false)).Configuration%><br />
@@ -85,4 +85,4 @@ foreach(Attribute attribute in Attribute.GetCustomAttributes(HttpContext.Current
     {
         Response.Write(attribute.ToString()); %> <br />
 <%  } %> 
-{% endhighlight %}
+```

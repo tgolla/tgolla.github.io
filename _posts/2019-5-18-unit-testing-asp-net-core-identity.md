@@ -38,7 +38,7 @@ The example code I created to demonstrate these three steps is very simple and p
 
 The following is the code need to create an ASP.NET Core Identity configuration for unit testing.  Let’s take a line by line look at what is happening.
 
-{% highlight csharp %}
+```csharp
 private SqliteConnection sqliteConnection;
 private ApplicationIdentityDbContext identityDbContext;
 private IOptions<TokenValidation> tokenValidation;
@@ -86,7 +86,7 @@ public void TearDown()
     identityDbContext.Dispose();
     sqliteConnection.Close();
 }
-{% endhighlight %}
+```
 
 The code above is from AuthenticationControllerUnitTest.cs.  The same code can also be found in UserManagerExtensionsUnitTest.cs but varies slightly in the way data from appsetting.json is presented (tokenValidation vs. tokenValidationSettings).  This code is responsible for building the ASP.NET Core Identity configuration need to run a unit test.
 
@@ -94,28 +94,28 @@ The example is using the NUnit unit-testing framework and in the code snippet ab
 
 The Setup() method starts by creating a service collection.  This is normally done under the covers in your web application by CreateWebHostBuilder.
 
-{% highlight csharp %}
+```csharp
     IServiceCollection serviceCollection = new ServiceCollection();
-{% endhighlight %}
+```
 
 The next thing we need to do is add a DBContext for the database used by ASP.NET Core Identity.  Yes, this is where we start treading on the issue of separation of dependencies.  The compromise is that like the .NET framework we also trust that Entity Framework is well tested and for testing we will use a light weight in-memory database solution.
 
 While exploring the use of an in-memory database I looked at both the Entity Framework in-memory database provider and SQLite in-memory solution which I found to work best in this scenario.  One thing to note is that you need to create the SQLite connection object outside of the AddDbContext call.  Not doing so creates an odd behavior which appears to open and close the connection each time a call was made to a UserManager method causing data in the database to be cleared each time.
 
-{% highlight csharp %}
+```csharp
     sqliteConnection = new SqliteConnection("DataSource=:memory:");
     serviceCollection.AddDbContext<ApplicationIdentityDbContext>(options => options.UseSqlite(sqliteConnection));
-{% endhighlight %}
+```
 
 The next step is to configure the ASP.NET Core Identity service in the same manner as you plan to use it in your application. 
 
-{% highlight csharp %}
+```csharp
     serviceCollection.AddApplicationIdentity();
-{% endhighlight %}
+```
 
 AddApplicationIdentity is an extension method which can be found in the WebApplication.Identity project.  Placing the ASP.NET Core Identity service configuration into an extension method guaranteed that if any changes were made to the configuration it would be reflected in both the application and unit test.
 
-{% highlight csharp %}
+```csharp
     public static IServiceCollection AddApplicationIdentity(this IServiceCollection services)
     {
         services.AddIdentity<ApplicationUser, ApplicationRole>()
@@ -125,18 +125,18 @@ AddApplicationIdentity is an extension method which can be found in the WebAppli
 
         return services;
     }
-{% endhighlight %}
+```
 
 Finally, with the ASP.NET Core Identity service configured we can get both the UserManager and RoleManager services for use in a unit test.
 
-{% highlight csharp %}
+```csharp
     userManager = serviceCollection.BuildServiceProvider().GetService<UserManager<ApplicationUser>>();
     roleManager = serviceCollection.BuildServiceProvider().GetService<RoleManager<ApplicationRole>>();
-{% endhighlight %}
+```
 
 The last part of the code in the Setup() method is used to pull data from the appSettings.json file.
 
-{% highlight csharp %}
+```csharp
     var builder = new ConfigurationBuilder()
         .SetBasePath(Directory.GetCurrentDirectory())
         .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true); 
@@ -147,25 +147,25 @@ The last part of the code in the Setup() method is used to pull data from the ap
     serviceCollection.Configure<TokenValidation>(tokenValidationSection);
 
     tokenValidation = serviceCollection.BuildServiceProvider().GetService<IOptions<TokenValidation>>();
-{% endhighlight %}
+```
 
 The code varies on last line between the controller and the user manager extension unit test in how data from the application settings file is retrieved.
 
-{% highlight csharp %}
+```csharp
     tokenValidationSettings = serviceCollection.BuildServiceProvider().GetService<IOptions<TokenValidation>>().Value;
-{% endhighlight %}
+```
 
 The code in the TearDown() method simply makes sure the database is deleted, disposed of and the connection is closed.
 
-{% highlight csharp %}
+```csharp
     identityDbContext.Database.EnsureDeleted();
     identityDbContext.Dispose();
     sqliteConnection.Close();
-{% endhighlight %}
+```
 
 Now that we have a valid UserManager and RoleManager instance we can proceed to using then in our unit test.
 
-{% highlight csharp %}
+```csharp
     [Test]
     public async Task ChangePasswordAsync_ConfirmChange()
     {
@@ -181,7 +181,7 @@ Now that we have a valid UserManager and RoleManager instance we can proceed to 
 
         Assert.That(user.PasswordHash, Is.Not.EqualTo(passwordHash));
     }
-{% endhighlight %}
+```
 
 In the unit test ChangePasswordAsync_ConfirmChange in UserManagerExtensionsUnitTest.cs you can see how we use the UserManager instances to create a user, get the created password hash and then test.
 

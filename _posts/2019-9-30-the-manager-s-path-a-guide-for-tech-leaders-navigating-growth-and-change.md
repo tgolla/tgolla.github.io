@@ -9,7 +9,7 @@ header:
   image: /assets/images/headers/
 ---
 
-![Image](/assets/images/posts/The Manager's Path - A Guide for Tech Leaders Navigating Growth and Change.jpg "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change")
+![Image](/assets/images/posts/The-Manager's-Path-A-Guide-for-Tech-Leaders-Navigating-Growth-and-Change.jpg "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change")
 
 by Camille Fournier <br />[https://www.amazon.com/gp/product/B06XP3GJ7F/ref=dbs_a_def_rwt_bibl_vppi_i0](https://www.amazon.com/gp/product/B06XP3GJ7F/ref=dbs_a_def_rwt_bibl_vppi_i0 "The Manager's Path: A Guide for Tech Leaders Navigating Growth and Change"){:target="_blank"}
 

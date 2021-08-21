@@ -10,7 +10,7 @@ header:
 
 If you're doing anything web services that return JSON here are some useful tools.
 
-[![Image](/assets/images/posts/Json.NET NuGet Icon.png "Json.NET")Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/ "Json.NET"){:target="_blank"} is a popular high-performance JSON framework for .NET.
+[![Image](/assets/images/posts/Json.NET-NuGet-Icon.png "Json.NET")Json.NET](https://www.nuget.org/packages/Newtonsoft.Json/ "Json.NET"){:target="_blank"} is a popular high-performance JSON framework for .NET.
 
 Need to build a .NET class for an existing JSON response?  Then try one of these class generators.
 
