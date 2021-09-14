@@ -8,7 +8,7 @@ header:
   image: /assets/images/headers/20150403_150507-1280x320.jpg
 ---
 
-In the process of deploying and then testing code there is always that question in the back of your head... Is the code I’m testing really the code I deployed?   
+In the process of deploying and then testing code to development and staging environments there is always that question in the back of your head... Is the code I’m testing really the code I deployed?   
 
 In the world of the Azure DevOps pipelines the easiest way to identify the code you deploy is by the pipeline build number. 
 
