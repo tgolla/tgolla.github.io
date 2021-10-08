@@ -41,7 +41,16 @@ analytics:
   google:
     tracking_id: "UA-47017136-1"
     anonymize_ip: false # default
-
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/tgolla"
+      target: "_blank"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/tfgolla"
+      target: "_blank"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
