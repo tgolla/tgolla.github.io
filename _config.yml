@@ -52,7 +52,7 @@ footer:
       url: "https://stackoverflow.com/users/512471/terence-golla"
       target: "_blank"
     - label: "Arduino Library List"
-      icon: "fab fa-fw fa-infinity"
+      icon: "fas fa-fw fa-infinity"
       url: "https://www.arduinolibraries.info/authors/tgolla"
       target: "_blank"
     - label: "Twitter"
