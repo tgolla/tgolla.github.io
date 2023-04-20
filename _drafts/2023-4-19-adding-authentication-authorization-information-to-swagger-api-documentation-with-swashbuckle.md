@@ -54,7 +54,7 @@ namespace TGolla.Swashbuckle.AspNetCore.SwaggerGen
             List<string> authorizeAttributeRoles = authorizeAttributes.Where(x => !string.IsNullOrEmpty(x.Roles))
                 .OrderBy(x => x.Roles).Select(x => x.Roles).ToList();
 
-            // Get list of authorize any policy policies. 
+            // Get list of authorize on any one policy policies. 
             List<string> authorizeOnAnyOnePolicyAttributePolicies = new List<string>();
             if (authorizeOnAnyOnePolicyAttributes.Any())
             {
@@ -83,4 +83,6 @@ The first thing the ```Apply()``` method does is to look to see if the API metho
 ```csharp
 [AllowAnonymous]
 ```
-This is done by calling the ```OperationFilterContext``` extension method   ```GetControllerAndActionAttributes```. This was pulled directly from the GitHub repository Swashbuckle.AspNetCore.Filters published by Matt Frear.  The method takes an ```Attribute``` type and returns an ``` IEnumerable``` list of any attributes of the type passed. If an ```AllowAnonymousAttribute``` is found the message “Authentication/authorization is not required.” Is appended to the operation description.
+This is done by calling the ```OperationFilterContext``` extension method  ```GetControllerAndActionAttributes```. This was pulled directly from the GitHub repository Swashbuckle.AspNetCore.Filters published by Matt Frear.  The method takes an ```Attribute``` type and returns an ``` IEnumerable``` list of any attributes of the type passed. If an ```AllowAnonymousAttribute``` is found the message “Authentication/authorization is not required.” is appended to the operation description.
+
+If an ```AllowAnonymousAttribute``` was not found the code continues on to again use the ```GetControllerAndActionAttributes``` method, this time to collect a list of attributes type ```AuthorizeAttribute``` and a list of attributes type ```AuthorizeOnAnyOnePolicyAttribute```.  These lists are then queried using Linq to build string lists of policies, roles and authorize on any one policies.  These string lists are then used to generate a verbose message concerning the authorization required which is appended to the description and if there are no required policies, roles or authorize on any one policies the message “Authentication, but no authorization is required.” is returned.
