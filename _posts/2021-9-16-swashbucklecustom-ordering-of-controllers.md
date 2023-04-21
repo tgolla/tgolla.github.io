@@ -38,9 +38,7 @@ We will also look at going one step further by adding additional information lik
 To begin we need to define an attribute class (```SwaggerControllerOrderAttribute.cs```).
 
 ```
-using System;
-
-namespace SwashbuckleCustomOrderingControllersExample
+namespace TGolla.Swashbuckle.AspNetCore.SwaggerGen
 {
     /// <summary>
     /// Annotates a controller with a Swagger sorting order that is used when generating 
@@ -48,19 +46,20 @@ namespace SwashbuckleCustomOrderingControllersExample
     /// </summary>
     /// <remarks>
     /// Ref: http://blog.robiii.nl/2018/08/swashbuckle-custom-ordering-of.html modified for AddSwaggerGen() extension OrderActionsBy().
+    /// https://github.com/domaindrivendev/Swashbuckle.AspNetCore/blob/master/README.md#change-operation-sort-order-eg-for-ui-sorting
     /// </remarks>
     public class SwaggerControllerOrderAttribute : Attribute
     {
         /// <summary>
         /// Gets the sorting order of the controller.
         /// </summary>
-        public int Order { get; private set; }
+        public uint Order { get; private set; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="SwaggerControllerOrderAttribute"/> class.
         /// </summary>
         /// <param name="order">Sets the sorting order of the controller.</param>
-        public SwaggerControllerOrderAttribute(int order)
+        public SwaggerControllerOrderAttribute(uint order)
         {
             Order = order;
         }
@@ -103,18 +102,14 @@ In our example we will want to annotate each of our controllers as follows.
     {
         // ...
     }
-
 ```
 
 Next we need to create a class that will collect a list of controllers with the SwaggerControllerOrder attribute value (```SwaggerControllerOrder```).
 
 ```
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 
-namespace SwashbuckleCustomOrderingControllersExample
+namespace TGolla.Swashbuckle.AspNetCore.SwaggerGen
 {
     /// <summary>
     /// Class for determining controller sort keys based on the SwaggerControllerOrder attribute.
@@ -226,10 +221,10 @@ SwaggerControllerOrder<ControllerBase> swaggerControllerOrder = new SwaggerContr
 
 When instantiated the ```SwaggerControllerOrder``` class searches the assembly for controllers of type ```ControllerBase``` and builds a dictionary list of controller names with their associated ``` SwaggerControllerOrder``` attribute value.  Those without the ``` SwaggerControllerOrder``` attribute are not place in the list and will be assigned the default max value 4294967295.
 
-With the class instantiated we can now use it when adding the Swagger generation service by adding an ``` OrderActionsBy``` method call to the ``` AddSwaggerGen``` configuration.
+With the class instantiated we can now use it when adding the Swagger generation service by adding an ``` OrderActionsBy``` method call to the ``` AddSwaggerGen``` configuration in the ```program.cs``` file.
 
 ```
-services.AddSwaggerGen(c =>
+builder.Services.AddSwaggerGen(c =>
 {
     c.OrderActionsBy((apiDesc) => $"{swaggerControllerOrder.SortKey(apiDesc.ActionDescriptor.RouteValues["controller"])}");
 });
