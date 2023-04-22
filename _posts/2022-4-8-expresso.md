@@ -8,7 +8,7 @@ header:
   image: /assets/images/headers/20200507_193458-1280x320.jpg
 ---
 
-![Image](/assets/images/posts/Expresso.png "Expresso"){: .align-right} Recently a college of mine introduced me to a network AI tool our company had begun to use.  The tool allows you to setup different types of pattern matching, one of which is through the use of regular expressions.  When I asked him what type of tools he was using to build and test the regular expressions he looked at me like I was crazy.  That was until I introduced him to Expresso, a tool I have been using for over 20 years.
+![Image](/assets/images/posts/Expresso.png "Expresso"){: .align-right} Recently a colleage of mine introduced me to a network AI tool our company had begun to use.  The tool allows you to setup different types of pattern matching, one of which is through the use of regular expressions.  When I asked him what type of tools he was using to build and test the regular expressions he looked at me like I was crazy.  That was until I introduced him to Expresso, a tool I have been using for over 20 years.
 
 Expresso is a full feature regular expression (RegEx) development tool that allows you to easily build and test your regular expressions.  The tool allows you to create a project to build and test your specific regular expression which can be saved and modified in the future.
 
