@@ -29,6 +29,18 @@ namespace TGolla.Swashbuckle.AspNetCore.SwaggerGen
     /// </summary>
     public class AppendAuthorizationToDescription : IOperationFilter
     {
+        // Boolean used to determine if the AllowAnonymous description should be added.
+        private bool excludeAllowAnonymousDescription = false;
+
+        /// <summary>
+        /// Initializes a new instance of the AppendAuthorizationToDescription class. 
+        /// </summary>
+        /// <param name="excludeAllowAnonymousDescription">Boolean used to determine if the AllowAnonymous description should be added.</param>
+        public AppendAuthorizationToDescription(bool excludeAllowAnonymousDescription = false)
+        {
+            this.excludeAllowAnonymousDescription = excludeAllowAnonymousDescription;
+        }
+
         /// <summary>
         /// Applys the appended API authentication/authorization information to the operation description.
         /// </summary>
@@ -39,7 +51,9 @@ namespace TGolla.Swashbuckle.AspNetCore.SwaggerGen
         {
             if (context.GetControllerAndActionAttributes<AllowAnonymousAttribute>().Any())
             {
-                operation.Description += "\r\n\r\nAuthentication/authorization is not required.";
+                if (!excludeAllowAnonymousDescription)
+                    operation.Description += "\r\n\r\nAuthentication/authorization is not required.";
+
                 return;
             }
 
@@ -83,11 +97,12 @@ The first thing the ```Apply()``` method does is to look to see if the API metho
 ```csharp
 [AllowAnonymous]
 ```
-This is done by calling the ```OperationFilterContext``` extension method  ```GetControllerAndActionAttributes```. This was pulled directly from the GitHub repository Swashbuckle.AspNetCore.Filters published by Matt Frear.  The method takes an ```Attribute``` type and returns an ``` IEnumerable``` list of any attributes of the type passed. If an ```AllowAnonymousAttribute``` is found the message “Authentication/authorization is not required.” is appended to the operation description.
+This is done by calling the ```OperationFilterContext``` extension method  ```GetControllerAndActionAttributes```. This was pulled directly from the GitHub repository Swashbuckle.AspNetCore.Filters published by Matt Frear.  The method takes an ```Attribute``` type and returns an ``` IEnumerable``` list of any attributes of the type passed. If an ```AllowAnonymousAttribute``` is found and assuming the ```excludeAllowAnonymousDescription``` is false the message “Authentication/authorization is not required.” is appended to the operation description.
 
 If an ```AllowAnonymousAttribute``` was not found the code continues on to again uses the ```GetControllerAndActionAttributes``` method, this time to collect a list of attributes type ```AuthorizeAttribute``` and a list of attributes type ```AuthorizeOnAnyOnePolicyAttribute```.  These lists are then queried using Linq to build string lists of policies, roles and authorize on any one policies.  These string lists are then used to generate a verbose message concerning the authorization required which is appended to the description and if there are no required policies, roles or authorize on any one policies the message “Authentication, but no authorization is required.” is returned.
 
-To implement the filter requires that you call the ```OperationFilter<>()``` method inside ```AddSwaggerGen()``` in your ```progrms.cs``` file.
+To implement the filter requires that you call the ```OperationFilter<>()``` method with the ```AppendAuthorizationToDescription``` class inside ```AddSwaggerGen()``` in your ```progrms.cs``` file.
+
 ``` csharp
 builder.Services.AddSwaggerGen(c =>
 {
@@ -95,6 +110,12 @@ builder.Services.AddSwaggerGen(c =>
     c.OperationFilter<AppendAuthorizationToDescription>();
 	…
 }
+```
+
+If you wish to exclude the ```AllowAnonymousAttribute``` message “Authentication/authorization is not required.” from an API description you will need to set the ```excludeAllowAnonymousDescription``` parameter argument to true.
+
+```csharp
+c.OperationFilter<AppendAuthorizationToDescription>(true);
 ```
 
 If you would like to see the filter in action check out the ``` AppendAuthorizationToDescriptionExample``` website in the GitHub repository  [TGolla.Swashbuckle.AspNetCore](https://github.com/tgolla/TGolla.Swashbuckle.AspNetCore/tree/main/TGolla.Swashbuckle.AspNetCore) or start using the filter in your project by installing the NuGet package [TGolla.Swashbuckle.AspNetCore](https://www.nuget.org/packages/TGolla.Swashbuckle.AspNetCore/).
