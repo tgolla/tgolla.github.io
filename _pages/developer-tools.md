@@ -3,7 +3,7 @@ layout: single
 title: Developer Tools
 permalink: /developer-tools/
 header:
-  image: /assets/images/headers/20200510_092102-1280x320.jpg
+  image: /assets/images/headers/DeveloperTools-1280x320.png
 description: A list of development tools you should not be without.
 ---
 

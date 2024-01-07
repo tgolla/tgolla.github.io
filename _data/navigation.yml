@@ -1,6 +1,8 @@
 main:
   - title: ".NET"
     url: /.net/
+  - title: "Arduino"
+    url: /arduino/
   - title: "Developer Tools"
     url: /developer-tools/
   - title: "Books"
