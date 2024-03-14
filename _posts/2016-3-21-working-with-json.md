@@ -16,4 +16,4 @@ Need to build a .NET class for an existing JSON response?  Then try one of these
 
 [JSON2CSharp](http://json2csharp.com/ "JSON2CSharp"){:target="_blank"} is an online tool that generates c# classes from JSON.
 
-[JSON C# Class Generator](http://jsonclassgenerator.codeplex.com/ "jsonclassgenerator"){:target="_blank"} is an application that generates C# classes from a sample JSON text, so you can use strongly typed programming with JSON.  8/14/2021 Update: CodePlex Archives will be shut down after July 1st, 2021.  The project has been forked to GitHub [https://github.com/JsonCSharpClassGenerator/JsonCSharpClassGenerator/](https://github.com/JsonCSharpClassGenerator/JsonCSharpClassGenerator/){:target="_blank"}
+JSON C# Class Generator is an application that generates C# classes from a sample JSON text, so you can use strongly typed programming with JSON. Code to build the application can be found on GitHub [https://github.com/JsonCSharpClassGenerator/JsonCSharpClassGenerator/](https://github.com/JsonCSharpClassGenerator/JsonCSharpClassGenerator/){:target="_blank"}

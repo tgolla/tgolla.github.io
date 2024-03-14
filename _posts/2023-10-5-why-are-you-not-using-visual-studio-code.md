@@ -3,7 +3,7 @@ layout: single
 title:  "Why are you NOT using Visual Studio Code!"
 date:   2023-10-5 5:16:00 -0600
 category: Developer-Tools
-tags: VS-Code VS-Code_Marketplace Editor Debug IntelliSense Git GitHub Vim Notepad++ Atom Sublime-Text Visual-Studio IDE PlatformIO Arduino ESP8266 ESP32
+tags: VS-Code VS-Code_Marketplace Editor Debug IntelliSense Git GitHub Vim Notepad++ Atom Sublime-Text Visual-Studio IDE PlatformIO Arduino ESP8266 ESP32 Windows Linux Mac
 header:
   image: /assets/images/headers/20210404_114825-1280x320.jpg
 ---
