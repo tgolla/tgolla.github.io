@@ -5,7 +5,7 @@ date:   2024-1-7 18:18:00 -0600
 category: Arduino
 tags: Arduino ESP8266 ESP32 Eggbot Spherebot
 header:
-  image: /assets/images/headers/20210404_114825-1280x320.jpg
+  image: /assets/images/headers/20180817_174120-1280x320.jpg
 ---
 
 Meet the SphereBot, an Eggbot clone. This project started many years ago when my daughter decide she was going to show chickens at the county fair. For those of you who don't live in the country, showing chickens is really a thing. While we never did get to the county fair with a chicken, and the daughter is now in college, the chickens are still around. And after building 4 chicken coops, dad has almost completed this project.
