@@ -61,4 +61,4 @@ To power the ESP32 and added modules I will need a USB wall charger and cable. T
 While the [Arduino IDE 2](https://docs.arduino.cc/software/ide-v2/tutorials/getting-started-ide-v2/){:target="_blank"} has come a long way from what is now referred to as the Arduino Legacy IDE or Arduino IDE 1, a lot of developers including myself prefer to use VS Code, short for [Visual Studio Code](https://code.visualstudio.com/){:target="_blank"}. VS Code is an extremely versatile editor that through the implementation of extensions can work across multiple languages and platforms. To use VS code you will need to install the [Arduino](https://marketplace.visualstudio.com/items?itemName=vsciot-vscode.vscode-arduino){:target="_blank"} extension. You might also want to look at the [PlatformIO IDE for VS Code](https://platformio.org/){:target="_blank"} extension.
 
 ### More to Come...
-If you can’t wait for the next article “Beta Testing”, you can get a sneak peek at the [GitHub repository](https://github.com/tgolla/AerobicSepticSystemMonitor){:target="_blank"}. 
+Check out [Part 2 - Beta Testing](/arduino/aerobic-septic-system-monitor-part-2-beta-testing/). 
