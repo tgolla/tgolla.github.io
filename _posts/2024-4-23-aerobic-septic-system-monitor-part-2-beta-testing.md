@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Aerobic Septic System Monitor - Part 2 - Beta Testing"
-date:   2024-4-23 00:00:00 -0600
+date:   2024-4-23 06:23:23 -0600
 category: Arduino
 tags: ESP32 Aerobic-Septic Septic Current-Sensor Voltage-Sensor SD-Card Real-Time-Clock EEPROM OLED-Display
 header:
