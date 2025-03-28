@@ -67,6 +67,10 @@ footer:
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/tfgolla"
       target: "_blank"
+    - label: "Gallery"
+      icon: "fas fa-fw fa-camera"
+      url: "/gallery/"
+      target: "_self"
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.26.2"
