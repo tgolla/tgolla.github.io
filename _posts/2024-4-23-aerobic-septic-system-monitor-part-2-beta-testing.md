@@ -50,7 +50,7 @@ To do this I will use a simple [220V optocoupler module](https://www.amazon.com/
 | GND                     | GND (-)     |
 | OUT (signal)            | GPIO 34     |
 
-![Is the Power On Schematic](/assets/images/posts/AerobicSepticSystemMonitor/IsThePowerOnSchematic.png)
+![Is The Power On Schematic](/assets/images/posts/AerobicSepticSystemMonitor/IsThePowerOnSchematic.png)
 
 The following is a photo of the AC circuit test board I built for testing based on the test circuit above. When plugged in and the the switch is on, the plug has power and the optocoupler module (green PCB (Printed Circuit Board), far right of photo) will sense voltage. In the next module I will discuss the current sensor (blue PCB, bottom of photo).
 

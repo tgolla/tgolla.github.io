@@ -73,7 +73,7 @@ footer:
       target: "_self"
 
 # Build settings
-remote_theme: "mmistakes/minimal-mistakes@4.26.2"
+remote_theme: "mmistakes/minimal-mistakes@4.27.3"
 minimal_mistakes_skin: "air" #"default", "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 locale: "en-US"
 plugins:
